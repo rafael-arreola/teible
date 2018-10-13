@@ -19,7 +19,7 @@ const orderBy = (arr, field, order) => {
     return dotGet(a, field) > dotGet(b, field)
   })
 */
-  return _.orderBy(copy, field, order)
+  return _.sortBy(copy, field, order)
 }
 
 const filter = (items, filtering) => {
