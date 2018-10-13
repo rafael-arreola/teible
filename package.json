@@ -78,5 +78,8 @@
     "test": "jest",
     "test-ci": "npm run build && npm run coverage -- --ci --maxWorkers=4 --no-cache",
     "watch": "lerna run --parallel watch"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
