@@ -18,15 +18,15 @@ const chunk = (arr, size) => {
 
 const orderBy = (arr, field, order) => {
   let copy = [...arr];
-  copy.sort((a, b) => {
+  /*copy.sort((a, b) => {
     if (order === 'desc') {
       return dotGet(a, field) < dotGet(b, field)
     }
 
     return dotGet(a, field) > dotGet(b, field)
   });
-
-  return copy
+*/
+  return _.sortBy(copy, field, order)
 };
 
 const filter = (items, filtering) => {
